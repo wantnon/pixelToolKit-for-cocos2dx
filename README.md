@@ -2,7 +2,13 @@ Pixel ToolKit for Cocos2dx
 ==========
 by yang chao (wantnon), 2014-5-4  
 
-pixel ToolKit for cocos2dx is a simple pixel game extension for cocos2d-x, provide an easy way to create and draw static and dynamic(destructible) pixel objects.  
+pixel ToolKit for cocos2dx is a simple pixel extension for cocos2d-x, provide an easy way to create and draw static and dynamic(destructible) pixel objects.  
+  
+advantages of pixel:
+1, resources are easy to prepare.  
+2, resources is very small.  
+3, efficient collision test.    
+4, easy to do destruction.  
   
 the ToolKit based on cocos2d-x 2.2. 
    
