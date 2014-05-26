@@ -8,7 +8,7 @@ the ToolKit based on cocos2d-x 2.2.
    
 currently, iOS and Win32 project are available.  
     
-screenshot:
+screenshot:  
 ![screenshot](http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/raw/master/screenshot/screenshot1.jpg)    
   
 ![screenshot](http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/raw/master/screenshot/screenshot2.jpg)   
