@@ -397,7 +397,7 @@ vector<CfragSprite*> Cplayer::getFragsHitByShotBall(CshotBall_dynamic*shotBall,C
     vector<CfragSprite*> collisionFrags;
     {
         vector<CfragSprite*> t_collisionFrags=dpSprite->getFragsInRect(shotBallRect);
-        //set frags in collisionFrags to null
+        //for each frag in collisionFrags, see whether it really collision with shotBall
         int nFrag=(int)t_collisionFrags.size();
         for(int i=0;i<nFrag;i++){
             CfragSprite*frag=t_collisionFrags[i];
