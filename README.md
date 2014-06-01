@@ -17,7 +17,7 @@ currently, iOS and Win32 project are available.
 how to run the demos: http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/how-to-run-the-demos  
 如何运行demos: http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cdemos  
   
-here is a win32 exe for demo1 : http://pan.baidu.com/s/13ZGx4      
+here is a win32 exe for demo1 : http://pan.baidu.com/s/1c0CdN9I      
   
 how to control:  
 run right: mouse down on the right side of the player.  
