@@ -117,7 +117,7 @@ void CdynamicPixelSprite::noise(){
         }
     }
 }
-void CdynamicPixelSprite::reFormToOrigin(){
+void CdynamicPixelSprite::relocateToOrigin(){
     int nRow=getFragMatRowCount();
     int nCol=getFragMatColCount();
     

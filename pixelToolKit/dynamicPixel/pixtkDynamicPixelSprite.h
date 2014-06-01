@@ -45,7 +45,7 @@ public:
     virtual~CdynamicPixelSprite(){}
     bool init(const string&texFileName,CCSize perPixelSize=g_defaultPerPixelSize);
     void noise();
-    void reFormToOrigin();
+    void relocateToOrigin();
     CCSpriteBatchNode* getFragRoot(){return m_fragRoot;}
     int getFragMatRowCount()const{return m_fragMat.size();}
     int getFragMatColCount()const{return (getFragMatRowCount()==0?0:(int)m_fragMat[0].size());}
