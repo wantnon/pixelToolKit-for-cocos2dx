@@ -22,7 +22,7 @@ class CstaticPixelSprite:public CCSprite
 public:
     CstaticPixelSprite(){}
     virtual~CstaticPixelSprite(){}
-    bool init(const string&texFileName,CCSize perPixelSize=CCSize(10,10));
+    bool init(const string&texFileName,CCSize perPixelSize=g_defaultPerPixelSize);
 protected:
     CCSize m_perPixelSize;
 };
