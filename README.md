@@ -17,6 +17,8 @@ currently, iOS and Win32 project are available.
 how to run the demos: http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/how-to-run-the-demos  
 如何运行demos: http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/如何运行demos    
   
+document: http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/home   
+   
 here is a win32 exe for demo1 : http://pan.baidu.com/s/1c0CdN9I      
   
 how to control:  
