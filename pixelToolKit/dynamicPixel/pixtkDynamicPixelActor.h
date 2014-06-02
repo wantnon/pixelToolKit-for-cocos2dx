@@ -69,23 +69,23 @@ public:
     CdynamicPixelAniStack*getAniStack(){return m_aniStack;}
     void setAniStack(CdynamicPixelAniStack*aniStack);
     void setdpModel(CdynamicPixelModel*dpModel);
+    CdynamicPixelModel*getdpModel(){return m_dpModel;}
     void aniTo(float t,int aniLayerIndex);
     CdynamicPixelModel* getCurDisplayModel();
     CCRect getBoundingBoxInLocalSpace();
     CCRect getBoundingBox();
     CCRect getCurrentFrameBoundingBoxInLocalSpace();
     CCRect getCurrentFrameBoundingBox();
-    void addCollisionRectInLocalSpace(const CcollisionRect&localSpaceCollisionRect);
-    CCRect getCollisionRectByIndex(int index);
-    int getCollisionRectIndexByName(const string&name);
-    CCRect getCollisionRectByName(const string&name);
-    void draw();
+    CCRect getCollisionRectByIndex(int index){return convertRectToParent(m_dpModel->getCollisionRectByIndex(index));}
+    CCRect getCollisionRectByName(const string&name){return convertRectToParent(m_dpModel->getCollisionRectByName(name));}
+    CCRect getCurrentFrameCollisionRectByIndex(int index);
+    CCRect getCurrentFrameCollisionRectByName(const string&name);
+    CCRect convertRectToParent(const CCRect&rectInLocalSpace) {return CCRectApplyAffineTransform(rectInLocalSpace, nodeToParentTransform());}
 protected:
     void init_dft();
 protected:
     CCNode*m_displayNode;
     CdynamicPixelAniStack*m_aniStack;
-    vector<CcollisionRect> m_collisionRectListInLocalSpace;
     CdynamicPixelModel*m_dpModel;
 };
 

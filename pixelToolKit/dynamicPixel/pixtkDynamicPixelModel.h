@@ -25,8 +25,15 @@ public:
     CdynamicPixelSprite*getdpSpriteByIndex(int index);
     CCRect getBoundingBoxInLocalSpace()const;
     CCRect getBoundingBox();
+    void addCollisionRectInLocalSpace(const CcollisionRect&localSpaceCollisionRect);
+    CCRect getCollisionRectByIndex(int index);
+    CCRect getCollisionRectByName(const string&name);
+    void draw();
+protected:
+    int getCollisionRectIndexByName(const string&name);
 protected:
     vector<CdynamicPixelSprite*> m_dpSpriteList;
+    vector<CcollisionRect> m_collisionRectListInLocalSpace;
 };
 namespace_pixtk_end
 #endif /* defined(__HelloCpp__pixtkDynamicPixelModel__) */

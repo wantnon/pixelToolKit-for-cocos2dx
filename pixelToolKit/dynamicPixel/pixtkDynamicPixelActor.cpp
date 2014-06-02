@@ -181,54 +181,18 @@ CCRect CdynamicPixelActor::getCurrentFrameBoundingBoxInLocalSpace(){
     assert(curModel);
     return curModel->getBoundingBox();
 }
+CCRect CdynamicPixelActor::getCurrentFrameCollisionRectByIndex(int index){
+    CdynamicPixelModel*curModel=getCurDisplayModel();
+    assert(curModel);
+    return convertRectToParent(curModel->getCollisionRectByIndex(index));
+}
+CCRect CdynamicPixelActor::getCurrentFrameCollisionRectByName(const string&name){
+    CdynamicPixelModel*curModel=getCurDisplayModel();
+    assert(curModel);
+    return convertRectToParent(curModel->getCollisionRectByName(name));
+}
 CCRect CdynamicPixelActor::getCurrentFrameBoundingBox(){
     return CCRectApplyAffineTransform(getCurrentFrameBoundingBoxInLocalSpace(), nodeToParentTransform());
-}
-void CdynamicPixelActor::addCollisionRectInLocalSpace(const CcollisionRect&localSpaceCollisionRect){
-    m_collisionRectListInLocalSpace.push_back(localSpaceCollisionRect);
-}
-CCRect CdynamicPixelActor::getCollisionRectByIndex(int index) {
-    assert(index>=0&&index<(int)m_collisionRectListInLocalSpace.size());
-    return CCRectApplyAffineTransform(m_collisionRectListInLocalSpace[index].getRect(), nodeToParentTransform());
-}
-int CdynamicPixelActor::getCollisionRectIndexByName(const string&name){
-    int nRect=(int)m_collisionRectListInLocalSpace.size();
-    int index=-1;
-    for(int i=0;i<nRect;i++){
-        if(m_collisionRectListInLocalSpace[i].getName()==name){
-            index=i;
-            break;
-        }
-    }//got index
-    return index;
-}
-CCRect CdynamicPixelActor::getCollisionRectByName(const string&name){
-    int index=getCollisionRectIndexByName(name);
-    if(index==-1){
-        cout<<"error: not find!"<<endl;
-        assert(false);
-    }else{
-        return getCollisionRectByIndex(index);
-    }
-}
-void CdynamicPixelActor::draw(){
-    if(g_isShowBoundingBox){
-        int nCollisionRect=(int)m_collisionRectListInLocalSpace.size();
-        for(int i=0;i<nCollisionRect;i++){
-            CCRect rect=m_collisionRectListInLocalSpace[i].getRect();
-            // v3 ---- v2
-            //    |            |
-            // v0 ---- v1
-            CCPoint v0=CCPoint(rect.getMinX(),rect.getMinY());
-            CCPoint v1=CCPoint(rect.getMaxX(),rect.getMinY());
-            CCPoint v2=CCPoint(rect.getMaxX(),rect.getMaxY());
-            CCPoint v3=CCPoint(rect.getMinX(),rect.getMaxY());
-            ccDrawLine(v0, v1);
-            ccDrawLine(v1, v2);
-            ccDrawLine(v2, v3);
-            ccDrawLine(v3, v0);
-        }
-    }
 }
 void CdynamicPixelActor::init_dft(){
     //m_displayNode

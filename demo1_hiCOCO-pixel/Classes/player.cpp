@@ -111,10 +111,10 @@ bool Cplayer::init(const string&texFileName,CCNode*sceneRoot,CCSize perPixelSize
     CcollisionRect dnRect=CcollisionRect(CCRect(margin-width/2+width/3,margin-height/2,width/3-2*margin,height/3-2*margin),"dnRect");
     CcollisionRect upRect=CcollisionRect(CCRect(margin-width/2+width/3,margin-height/2+height/3*2,width/3-2*margin,height/3-2*margin),"upRect");
     
-    this->addCollisionRectInLocalSpace(leftRect);
-    this->addCollisionRectInLocalSpace(rightRect);
-    this->addCollisionRectInLocalSpace(dnRect);
-    this->addCollisionRectInLocalSpace(upRect);
+    this->getdpModel()->addCollisionRectInLocalSpace(leftRect);
+    this->getdpModel()->addCollisionRectInLocalSpace(rightRect);
+    this->getdpModel()->addCollisionRectInLocalSpace(dnRect);
+    this->getdpModel()->addCollisionRectInLocalSpace(upRect);
 
     //shotBallList
     const int nShotBall=20;
