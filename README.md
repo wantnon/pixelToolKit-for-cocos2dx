@@ -10,7 +10,7 @@ advantages of pixel:
 3, efficient collision test.    
 4, easy to do destruction.  
   
-the ToolKit based on cocos2d-x 2.2.0 (note: must be 2.2.0, not 2.2.x!)  
+the ToolKit based on cocos2d-x 2.2.0   
    
 currently, iOS and Win32 project are available.  
     
