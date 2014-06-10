@@ -1,4 +1,4 @@
-Pixel ToolKit for Cocos2dx
+﻿Pixel ToolKit for Cocos2dx
 ==========
 by yang chao (wantnon), 2014-5-4  
 
@@ -16,7 +16,7 @@ currently, iOS and Win32 project are available.
     
 文档(document): http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/home   
    
-here is a win32 exe for demo1 : http://t.cn/RvfqGH0         
+here is a win32 exe for demo1 : http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/attach_files         
   
 how to control:  
 run right: mouse down on the right side of the player.  
