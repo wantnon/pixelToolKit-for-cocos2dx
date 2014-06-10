@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="pixelToolKit">
+      <UniqueIdentifier>{939a535e-e74d-43b1-82c0-6d35c804a0dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\define.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\grass.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ground.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\lava.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\player.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\shotBall.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\common\pixtkDefine.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\common\pixtkFunc.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\common\pixtkSimpleClass.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\dynamicPixel\pixtkDynamicPixelActor.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\dynamicPixel\pixtkDynamicPixelModel.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\dynamicPixel\pixtkDynamicPixelSprite.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pixelToolKit\staticPixel\pixtkStaticPixelSprite.cpp">
+      <Filter>pixelToolKit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\define.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\grass.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ground.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lava.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\player.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shotBall.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\common\pixtkDefine.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\common\pixtkFunc.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\common\pixtkSimpleClass.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\dynamicPixel\pixtkDynamicPixelActor.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\dynamicPixel\pixtkDynamicPixelModel.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\dynamicPixel\pixtkDynamicPixelSprite.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\pixtk.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\pixtkNote.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pixelToolKit\staticPixel\pixtkStaticPixelSprite.h">
+      <Filter>pixelToolKit</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
