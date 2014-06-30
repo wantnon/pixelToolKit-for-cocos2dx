@@ -158,16 +158,27 @@ void HelloWorld::initGame(){
         CCControlButton* controlButton=CCControlButton::create(title, btnUp);
         controlButton->setBackgroundSpriteForState(btnDn,CCControlStateHighlighted);
         controlButton->setPreferredSize(CCSize(100,50));
-        controlButton->setPosition(ccp(150,winSize.height-150));
+        controlButton->setPosition(ccp(200,winSize.height-150));
         controlButton->addTargetWithActionForControlEvents(this, (SEL_CCControlHandler)(&HelloWorld::controlButtonEvent_debug), CCControlEventTouchDown);
         m_uiRoot->addChild(controlButton);
         m_controlButton_debug=controlButton;
     }
     
+    // instruction
+    {
     
+        {
+            CCLabelTTF* pLabel = CCLabelTTF::create("jump: drag up \r\n shot: press 'shot' button", "Arial", 30);
+            pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
+                                    origin.y + visibleSize.height - pLabel->getContentSize().height-100));
+            m_uiRoot->addChild(pLabel);
+        }
+    
+        
+    }
     // author info
     {
-        CCLabelTTF* pLabel = CCLabelTTF::create("by yang chao (wantnon) 2014-5-4 (last edit 2014-5-25)", "Arial", 30);
+        CCLabelTTF* pLabel = CCLabelTTF::create("by yang chao (wantnon) 2014-5-4 (last edit 2014-6-30)", "Arial", 30);
         pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
                                 origin.y + visibleSize.height - pLabel->getContentSize().height-60));
         m_uiRoot->addChild(pLabel);
