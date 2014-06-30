@@ -1,4 +1,4 @@
-﻿Pixel ToolKit for Cocos2dx
+Pixel ToolKit for Cocos2dx
 ==========
 by yang chao (wantnon), 2014-5-4  
 
@@ -12,16 +12,16 @@ advantages of pixel:
   
 the ToolKit based on cocos2d-x 2.2.0   
    
-currently, iOS and Win32 project are available.  
+currently, iOS, Mac and Win32 project are available.  
     
 文档(document): http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/wikis/home   
    
-here is a win32 exe for demo1 : http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/attach_files         
+here is demo1's executables for Mac and Win32 : http://git.oschina.net/wantnon2/pixelToolKit-for-cocos2dx/attach_files         
   
 how to control:  
 run right: mouse down on the right side of the player.  
 run left: mouse down on the left side of the player.  
-jump: mouse down and sweep up.  
+jump: drag up.  
 shot: press 'shot' button.  
   
 控制方法：  
